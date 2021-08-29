@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: #1e1e1e;
+    padding: 10px;
+}
+
+.btn{
+    color: #1e1e1e;
+    /* background-color: #1e1e1e; */
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: cyan;
+}
+
+.btn{
+    font-size: 20px;
+    color: white;
+}
+
+.btn.click:before{
+    content: '\f00d';
+}
+
+.sidebar{
+    position: absolute;
+    width: 250px;
+    min-height: 92%;
+    left: 0;
+    background-color: #1e1e1e;
+    transition: .3s;
+}
+
+.sidebar.hide{
+    left: -250px;
+}
+
+.sidebar .text{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+div ul {
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+    list-style: none;
+    
+}
+
+div ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+div ul li:last-child{
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+div ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 0 0 0 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    position: relative;
+}
+div ul li a:hover{
+    color: #57D4F7;
+    background-color: #1b1b1b;
+    border-left: 3px solid #57D4F7;
+}
+div ul li.active a{
+    color: cyan;
+    background-color: #1b1b1b;
+    border-left: 3px solid cyan;
+}
+
+div ul ul {
+    position: static;
+    display: none;
+}
+
+/* jQuery */
+    div ul .feature-show.show, div ul .service-show.show{
+        display: block;
+    }
+/* End */
+
+div ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+
+div ul ul li a {
+    font-size: 17px;
+    padding: 0 0 0 65px;
+}
+
+div ul li.active ul li a{
+    color: white;
+    background-color: #1b1b1b;
+    border-left: transparent;
+}
+
+div ul ul li a:hover{
+    color: cyan!important;
+    background: #1e1e1e!important;
+}
+
+div ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    transition: transform .2s;
+}
+
+div ul li a span.rotate {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.main{
+    /* width: 100%; */
+    /* height: 300px; */
+    /* background-color: cyan; */
+    margin: 0 0 0 250px;
+    padding: 0 0 0 15px;
+    transition: .3s;
+}
+
+.main.respon{
+    margin: 0 0 0 0;
+}
+
+@media screen and (max-width : 991px) {
+    .sidebar {
+        left: -260px;
+    }
+    .btn{
+        display: none;
+    }
+    .main{
+        margin: 0 0 0 0;
+    }
+}
