@@ -5,18 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" href="img/logo1.png">
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/style.css">
 <!-- <link rel="stylesheet" href="cssreset.css"> -->
 
 <body>
   
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-custom navbar-expand-lg navbar-dark fixed-top p-1">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#"><i class="far fa-user me-2"></i>Administrator<span class="fas fa-bars ms-4 btn"></span></a>
+      <a class="navbar-brand" href="#"><p><strong class="text-warning">KLIK</strong> <i class="fas fa-graduation-cap"></i>MAHASISWA</p><span class="fas fa-bars ms-4 btn"></span></a>
       <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,36 +33,53 @@
   </nav>
   
   
-  <!-- Sidebar -->
-  <section id="sidebar">
-    <div class="sidebar pt-2">
-      <ul>
-        <li><a href="#">Dashboard</a></li>
-        <li>
-          <a href="#" class="feature-btn">Feature <span class="fas fa-caret-right feature"></span></a>
-          <ul class="feature-show">
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="service-btn">Service <span class="fas fa-caret-right service"></span></a>
-          <ul class="service-show">
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Settiing</a></li>
-      </ul>
-    </div>
-  </section>
   
-  <section id="main">
-    <div class="main">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut necessitatibus atque rerum laborum explicabo. Possimus eveniet adipisci sed officia optio? Asperiores voluptatum neque expedita cum ducimus nobis voluptate accusantium quae reiciendis dolor saepe mollitia, suscipit nisi consequuntur distinctio fuga quos sit tempora dolorem omnis commodi vero! Perferendis alias mollitia at corporis hic magni fugiat. Dolorem veniam repellat quas. Ea nihil magni omnis, sint nostrum deleniti repellat ratione accusamus tempora incidunt animi voluptate minima, placeat assumenda natus iure nam magnam iusto voluptas in ex? Alias, mollitia fugit numquam hic cumque laborum exercitationem consequatur est facilis voluptas praesentium iste fugiat? Voluptas consectetur esse obcaecati odit error minima magni commodi magnam, mollitia asperiores? Reiciendis laborum vitae autem odit quibusdam fuga cum optio nesciunt est mollitia exercitationem culpa iusto deserunt doloremque fugiat vero eaque pariatur tempora, ducimus necessitatibus animi fugit nulla aut. Dolores minima sapiente voluptas reiciendis explicabo alias cum neque facilis aut quaerat nulla aliquid, doloremque aliquam iusto est repellendus quia repellat et in perspiciatis, earum sint. Facilis labore magni tempora dicta voluptate iste ea libero aperiam ratione. Quia, sequi perferendis. Mollitia non ad delectus aliquid veritatis? Dolorem, veniam eius consectetur repellendus eveniet minima porro doloribus animi, inventore, tempore quibusdam ex repudiandae! lorem2000</p>
+  <div class="container-fluid mt-5 content"> 
+    <div class="row">
+      <div class="col-2 p-0 sidebar">
+        <div class="text pt-3">Menu Utama</div>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Semester Sementara</a></li>
+          <li>
+            <a href="#" class="feature-btn">Perkuliahan <span class="fas fa-caret-left feature"></span></a>
+            <ul class="feature-show">
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="skripsi-btn">Skripsi <span class="fas fa-caret-left skripsi"></span></a>
+            <ul class="skripsi-show">
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="akademik-btn">Akademik <span class="fas fa-caret-left akademik"></span></a>
+            <ul class="akademik-show">
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Chatting/message</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Ubah Password</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+      <div class="col main p-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maiores labore odit, eius quaerat necessitatibus? Sed, ipsa vero sequi perferendis magnam sit quaerat dignissimos ducimus delectus. Vero rem, quaerat esse tenetur recusandae numquam, aliquid ipsa veritatis voluptatibus voluptate iusto maiores. Assumenda aut quo architecto deserunt at error fuga vel obcaecati enim illum ex, voluptatum impedit, voluptatibus nostrum tempore sed itaque sunt autem id sit neque inventore? Voluptates deleniti animi obcaecati odio perspiciatis. Quam, corrupti doloremque rerum saepe non facilis, facere sint nisi laudantium ducimus eaque nulla et officia tenetur ea uptatem consequuntur eligendi accusamus rem voluptas, officia dolorum, explicabo, quidem dicta illum vitae quae commodi dolorem fuga. Magni doloribus rem tempora, quidem obcaecati incidunt voluptatibus nihil ratione porro, quaerat voluptatum, minus tenetur quibusdam fuga. Doloremque facere dolores, aliquam molestiae omnis nobis eos exercitationem obcaecati quis atque fuga dicta natus, commodi similique inventore, ratione ducimus reiciendis assumenda nulla tempora? Ullam quam, et consequuntur commodi dicta velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat perferendis facere vitae dolore quibusdam harum consequuntur doloribus totam cupiditate suscipit modi natus, aut velit ad eligendi qui saepe, quos veritatis. Tenetur, possimus officia atque perferendis voluptates deleniti delectus esse assumenda? Rem facilis inventore blanditiis. Architecto debitis velit dignissimos doloremque, quia et officia error in aliquam, consectetur obcaecati laudantium eos fuga quam recusandae minima modi reprehenderit, quidem ducimus minus dolorem suscipit quisquam quod quas. Cum hic ipsa itaque quasi quo impedit, natus praesentium voluptas inventore quam nesciunt iste veniam quae animi minus at excepturi reprehenderit quaerat fuga nostrum aliquid aspernatur. Atque mollitia et sed dignissimos officia dicta ipsa ducimus, fuga, quas nulla fugit, expedita ab! Optio ut quasi porro, dolore error repellendus, culpa nobis, consectetur facere quis expedita ipsa quos sunt nostrum illo hic? Aut hic voluptates culpa ipsam natus dolorem repudiandae, fuga, earum voluptatem distinctio beatae dolore? Neque enim impedit libero quo culpa sit tenetur autem provident voluptate exercitationem est doloribus veniam officiis corrupti fugit, illo asperiores delectus vitae distinctio. Aperiam, eveniet. Magni, non. Iste quibusdam possimus deleniti aspernatur esse amet laborum placeat, totam excepturi illum dignissimos veritatis magnam aut soluta sit ullam debitis. Quod incidunt omnis vel accusantium impedit possimus, atque quia iste ipsum laudantium modi. Perspiciatis, esse aliquam. Quasi, possimus quia? Illum distinctio sunt suscipit harum qui laudantium voluptatum, accusantium, a facere maiores mollitia. Totam aliquid ipsa maxime reiciendis? Quas temporibus deserunt neque, iusto, aliquam labore possimus suscipit laborum eos, provident mollitia amet voluptatum soluta maxime beatae nostrum magni ut debitis eligendi repudiandae? Aliquam a maiores debitis quis, amet explicabo sint eveniet placeat perferendis non tenetur quisquam exercitationem soluta, accusantium voluptatem nobis quos dolorum. Quo sapiente quibusdam ullam magni reprehenderit, perspiciatis tempora quaerat architecto. Nihil itaque est nostrum assumenda cupiditate ducimus, laborum eveniet harum quasi vitae culpa.
+          
+        </p>
+      </div>
     </div>
-  </section>
+  </div>
+  
+  <footer>
+    <h6>Redisign by Agustiranda</h6>
+  </footer>
+  
   
   
   <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
@@ -77,9 +95,13 @@
       $('div ul .feature-show').toggleClass('show');
       $('div ul .feature').toggleClass('rotate');
     });
-    $('.service-btn').click(function(){
-      $('div ul .service-show').toggleClass('show');
-      $('div ul .service').toggleClass('rotate');
+    $('.skripsi-btn').click(function(){
+      $('div ul .skripsi-show').toggleClass('show');
+      $('div ul .skripsi').toggleClass('rotate');
+    });
+    $('.akademik-btn').click(function(){
+      $('div ul .akademik-show').toggleClass('show');
+      $('div ul .akademik').toggleClass('rotate');
     });
     $('div ul li').click(function(){
       $(this).addClass('active').siblings().removeClass('active');

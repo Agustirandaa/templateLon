@@ -6,8 +6,14 @@
 
 
 nav{
-    background-color: #1e1e1e;
+    background-color: #2B3643;
     padding: 10px;
+}
+
+nav p{
+    display: inline;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .btn{
@@ -28,40 +34,36 @@ nav{
 .btn.click:before{
     content: '\f00d';
 }
-
 .sidebar{
-    position: absolute;
-    width: 250px;
-    min-height: 92%;
+    position: relative;
+    width: 230px;
+    min-height: 88vh;
     left: 0;
-    background-color: #1e1e1e;
+    background-color: #364150;
     transition: .3s;
+}
+
+.sidebar .text{
+    color: #EEEED7;
+    font-size: 18px;
+    margin: 10px 0 15px 10px;
 }
 
 .sidebar.hide{
     left: -250px;
 }
 
-.sidebar .text{
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 70px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: white;
-}
-
 div ul {
-    background-color: #1b1b1b;
+    background-color: #364150;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     padding: 0 0 0 0;
     list-style: none;
     
 }
 
 div ul li {
-    line-height: 60px;
+    line-height: 50px;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -71,10 +73,10 @@ div ul li:last-child{
 
 div ul li a{
     text-decoration: none;
-    font-size: 18px;
-    color: white;
-    padding: 0 0 0 40px;
-    font-weight: 500;
+    font-size: 15px;
+    color: #EEEED7;
+    padding: 0 0 0 20px;
+    /* font-weight: 500; */
     display: block;
     width: 100%;
     border-left: 3px solid transparent;
@@ -82,12 +84,12 @@ div ul li a{
 }
 div ul li a:hover{
     color: #57D4F7;
-    background-color: #1b1b1b;
+    background-color: rgba(255, 255, 255, .1);
     border-left: 3px solid #57D4F7;
 }
 div ul li.active a{
     color: cyan;
-    background-color: #1b1b1b;
+    background-color: #364150;
     border-left: 3px solid cyan;
 }
 
@@ -97,7 +99,9 @@ div ul ul {
 }
 
 /* jQuery */
-    div ul .feature-show.show, div ul .service-show.show{
+    div ul .feature-show.show,
+    div ul .skripsi-show.show,
+    div ul .akademik-show.show{
         display: block;
     }
 /* End */
@@ -108,19 +112,19 @@ div ul ul li {
 }
 
 div ul ul li a {
-    font-size: 17px;
-    padding: 0 0 0 65px;
+    font-size: 15px;
+    padding: 0 0 0 35px;
 }
 
 div ul li.active ul li a{
     color: white;
-    background-color: #1b1b1b;
+    background-color: #364150;
     border-left: transparent;
 }
 
 div ul ul li a:hover{
-    color: cyan!important;
-    background: #1e1e1e!important;
+    color: #EEEED7;
+    background: rgba(255, 255, 255, .1);
 }
 
 div ul li a span{
@@ -133,20 +137,22 @@ div ul li a span{
 }
 
 div ul li a span.rotate {
-    transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(-90deg);
 }
 
 .main{
-    /* width: 100%; */
-    /* height: 300px; */
-    /* background-color: cyan; */
-    margin: 0 0 0 250px;
-    padding: 0 0 0 15px;
     transition: .3s;
 }
 
 .main.respon{
-    margin: 0 0 0 0;
+    margin: 0 0 0 -230px;
+}
+
+footer{
+    background-color: #364150;
+    padding: 8px;
+    color: white;
+    text-align: end;
 }
 
 @media screen and (max-width : 991px) {
@@ -157,6 +163,6 @@ div ul li a span.rotate {
         display: none;
     }
     .main{
-        margin: 0 0 0 0;
+        margin: 0 0 0 -230px;
     }
 }
